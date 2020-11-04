@@ -1,0 +1,4 @@
+  
+{
+    "ignore": ["dist/", "src/app/"]
+}
