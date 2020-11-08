@@ -1,0 +1,67 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=apple-itunes-app content="app-id=642139481, app-argument=flixel://"><meta name=fragment content=!><meta name=google-site-verification content=ErRd5225TNtU0voxFf0TVCpskKwdAiGmRp6lHLwbZBI><meta name=viewport content="width=device-width"><base href=/ ><link rel=apple-touch-icon-precomposed sizes=152x152 href=https://cdn.flixel.com/static/static-web/apple-touch-icon.png><link rel=apple-touch-icon href=https://cdn.flixel.com/static/static-web/favicons/apple-touch-icon.png><link rel=icon type=image/png href=https://cdn.flixel.com/static/static-web/favicons/32.png sizes=32x32><link rel=icon type=image/png href=https://cdn.flixel.com/static/static-web/favicons/120.png sizes=120x120><link rel=icon type=image/png href=https://cdn.flixel.com/static/static-web/favicons/152.png sizes=152x152><script>window.prerenderReady = false;</script></head><body style="margin: 0"><div id=app></div><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-30219039-1', 'auto');
+      ga('require', 'ec');</script><script type=text/javascript>/* <![CDATA[ */
+    var google_conversion_id = 962760023;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    /* ]]> */</script><div style=display:none><script type=text/javascript src=//www.googleadservices.com/pagead/conversion.js></script></div><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KBN9RC" height=0 width=0 style=display:none;visibility:hidden></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KBN9RC');</script><script>window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '239130049499290',
+          xfbml      : true,
+          version    : 'v2.12'
+        });
+      };
+      (function(d, s, id){
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) {return;}
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script><script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+      document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1441476536129521');
+      fbq('track', "PageView");</script><noscript><img height=1 width=1 style=display:none src="https://www.facebook.com/tr?id=1441476536129521&ev=PageView&noscript=1"></noscript><script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/lntwxsai';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script><script src=https://cdn.paddle.com/paddle/paddle.js></script><script type=text/javascript>Paddle.Setup({
+        vendor: 14878,
+        debug: false,
+        eventCallback: function(data) {
+          if (data.event === 'Checkout.Loaded'){
+            ga('send', 'event', 'Checkout', 'Loaded', 'Paddle', data);
+          };
+          if (data.event === 'Checkout.Error') {
+            ga('send', 'event', 'Checkout', 'Error', 'Paddle', data);
+          };
+          if (data.event === 'Checkout.Login') {
+            ga('send', 'event', 'Checkout', 'Login', 'Paddle', data);
+          };
+          if (data.event === 'Checkout.CountryChanged') {
+            ga('send', 'event', 'Checkout', 'CountryInformationEntered', 'Paddle', data);
+          };
+          if (data.event === 'Checkout.PaymentMethodSelected') {
+            ga('send', 'event', 'Checkout', 'PaymentMethodSelected', 'Paddle', data);
+          };
+          if (data.event === 'Checkout.DuplicateWarningShown') {
+            ga('send', 'event', 'Checkout', 'DuplicateWarningShown', 'Paddle', data);
+          };
+          if (data.event === 'Checkout.PaymentComplete') {
+            ga('send', 'event', 'Checkout', 'PaymentComplete', 'Paddle', data);
+            var order_amount = (data.eventData.checkout.prices.vendor.total - data.eventData.checkout.prices.vendor.total_tax).toFixed(2);
+            tap('conversion', data.eventData.checkout.id, order_amount);
+          };
+          if (data.event === 'Checkout.Complete') {
+            ga('send', 'event', 'Checkout', 'Complete', 'Paddle', data);
+          };
+          if (data.event === 'Checkout.Close') {
+            ga('send', 'event', 'Checkout', 'Close', 'Paddle', data);
+          };
+        }
+      });</script><script src=https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.12.0/lazyload.min.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/bowser/1.9.4/bowser.min.js></script><script type=text/javascript src=/static/js/manifest.2ae2e69a05c33dfc65f8.js></script><script type=text/javascript src=/static/js/vendor.07f06c3b29a0999571b4.js></script><script type=text/javascript src=/static/js/app.f6d7f5eadfdd2c255bf7.js></script></body></html>
