@@ -1,8 +1,28 @@
 .example-card {
-    max-width: 400px;
+    flex-basis: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin: 25px;
+    height: 50%;
+    width: 50%;
   }
-  
-  .example-header-image {
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-    background-size: cover;
+  .parent{
+    display: flex;
+    flex-flow: row wrap;
+    row-gap: 20px;
+    justify-content: center;
+    background: url(/assets/tparisumblr_nvfz0iKrVw1qzcq51o1_540.gif);
+    background-repeat: no-repeat;
+    background-size: cover; 
   }
+.githublink{
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+.card-title{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}

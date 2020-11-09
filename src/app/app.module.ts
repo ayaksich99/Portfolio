@@ -8,7 +8,7 @@ import { MaterialModule } from './materialModulle';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProjectsComponent } from './projects/projects.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
-import { ContactComponent } from './contact/contact.component';
+
 
 
 
@@ -18,7 +18,6 @@ import { ContactComponent } from './contact/contact.component';
     AppComponent,
     ProjectsComponent,
     AboutmeComponent,
-    ContactComponent,
     
   ],
   imports: [

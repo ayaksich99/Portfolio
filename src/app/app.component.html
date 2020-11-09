@@ -1,9 +1,29 @@
 <div class="cursor" [style.top]="top" [style.left]="left" [ngClass]="{'expand':expand}"></div>
 <mat-toolbar>
-    <span class="portfolio-header">My Portfolio</span>
+    <span class="portfolio-header">Alec Yaksich</span>
     <span class="example-spacer"></span>
-    <div routerLink="/aboutme" class="nav-aboutme">About Me</div>
-    <div routerLink="/projects" class="nav-projects">Projects</div>
-    <div routerLink="/contact" class="nav-contact">Contact</div>
-  </mat-toolbar>
- 
+    <div routerLink="/aboutme" class="nav-aboutme">
+        <button>
+            About Me
+        </button>
+    </div>
+    <div routerLink="/projects" class="nav-projects">
+        <button>Projects</button>
+    </div>
+    <a  href="mailto:ayaksich08@gmail.com">
+        <button>
+            Email
+        </button>
+    </a> 
+    <a  href="https://www.linkedin.com/in/alec-yaksich-44063a186/">
+        <button>
+            LinkedIn
+        </button>
+    </a>
+    <a href="https://github.com/ayaksich99?tab=repositories">
+        <button>
+            GitHub
+        </button>
+    </a>
+</mat-toolbar>
+<router-outlet></router-outlet>
