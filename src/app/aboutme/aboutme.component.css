@@ -1,11 +1,10 @@
 .aboutme-paragraph{
-    color: ghostwhite;
+    color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
     margin: auto;
-    margin-top:90px;
+    margin-top:40px;
     width: 50%;
-    font-size: larger;
 }
 .footer{
     position: fixed;
